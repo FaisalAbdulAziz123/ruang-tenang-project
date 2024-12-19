@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Tenang - Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di 
+        </div>
+        <div class="text">
+            <strong>Ruang Tenang</strong>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/self-assessment.jpg" alt="Self Assessment">
+                <h3>Self Assessment</h3>
+                <p>Untuk Tes Kesehatan Mental</p>
+                <a href="#">Let's Try</a>
+            </div>
+            <div class="card">
+                <img src="assets/blog.jpg" alt="Blog">
+                <h3>Blog</h3>
+                <p>Tentang Kesehatan Mental</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="assets/video.jpg" alt="Video about Mental Health">
+                <h3>Video about Mental Health</h3>
+                <p>Rekomendasi Video Kesehatan Mental</p>
+                <a href="#">See the Video</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #FDF2F2;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .text{
+            font-size: 3.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .card a {
+            color: #00A86B;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>
