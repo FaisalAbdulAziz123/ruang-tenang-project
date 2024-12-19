@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Login Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            height: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            flex: 1;
+            background-color: #ffe5d9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+        .left img {
+            position: absolute;
+        }
+        .left img:nth-child(1) {
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .left img:nth-child(2) {
+            top: 50px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .left img:nth-child(3) {
+            bottom: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .left img:nth-child(4) {
+            bottom: 50px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .quote {
+            text-align: center;
+            color: #d9534f;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .quote p {
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .right {
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .right h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .right p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .form-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+        .form-group i:hover {
+            color: #007bff;
+        }
+        .btn {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img alt="Decorative shape 1" src="https://storage.googleapis.com/a1aa/image/ntXrEPZzFxYKIJVewnCuxmUmapEns6Zqc44BEO1hesV8oX8TA.jpg"/>
+            <img alt="Decorative shape 2" src="https://storage.googleapis.com/a1aa/image/wfw8O2MCpBVmKyfUy2mxAMof1ojgbCEF1716h0QAeoF9jeifE.jpg"/>
+            <img alt="Decorative shape 3" src="https://storage.googleapis.com/a1aa/image/qMedBecPpBuFoUslJO4wd27NeMkra4fhfPrfq6sW7jivO6FfJA.jpg"/>
+            <img alt="Decorative shape 4" src="https://storage.googleapis.com/a1aa/image/Dm4diazqGpLTBJ3DoFnGbZPaZ7fnarvhJhEentFxr2b9oX8TA.jpg"/>
+            <div class="quote">
+                <p>Quote of the Day</p>
+                <p>"What happens is not as important as how you react to what happens"</p>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Ruang Tenang</h1>
+            <p>Belum punya akun? Daftar disini</p>
+            <div class="form-group">
+                <input id="email" placeholder="Email" type="email"/>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input id="password" placeholder="Password" type="password"/>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button class="btn" onclick="handleLogin()">Login</button>
+            <p class="forgot-password">Lupa password?</p>
+        </div>
+    </div>
+    <script>
+        function handleLogin() {
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!email || !password) {
+                alert("Email dan password tidak boleh kosong!");
+                return;
+            }
+
+            if (email === "ruang tenang" && password === "1234") {
+                alert("Login Berhasil!");
+                window.location.href = "get_started.html"; // Pastikan file ini ada di direktori yang sama
+            } else {
+                alert("Email atau password salah!");
+            }
+        }
+    </script>
+</body>
+</html>
