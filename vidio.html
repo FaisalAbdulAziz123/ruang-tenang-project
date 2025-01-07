@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Tenang - Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFEFE8;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #FFEFE8;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF7F50;
+        }
+
+        .logo span {
+            color: #FFB6C1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #FF7F50;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 50px;
+        }
+
+        .videos-section {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .videos-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .video-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-item img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .video-item .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .video-item .video-info h3 {
+            margin: 0;
+        }
+
+        .articles-section {
+            flex: 1;
+        }
+
+        .articles-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .articles-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .articles-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .articles-section ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .articles-section ul li a:hover {
+            color: #FF7F50;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 5px;
+            padding: 5px 10px;
+            background: #FFB6C1;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover {
+            background: #FF7F50;
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .contact-info {
+            font-size: 14px;
+        }
+
+        footer .social-icons a {
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer .social-icons a:hover {
+            color: #FF7F50;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Ruang <span>Tenang</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="quiz.html">Quiz/Test</a>
+            <a href="vidio.html">Video about Mental Health</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="videos-section">
+            <h2>All Videos</h2>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>How to Improve Your Mental Health - Depression, Anxiety, Stress</h3>
+                </div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Cara Efektif Menjaga Kesehatan Mental (Gangguan Pencernaan dan Stress)</h3>
+                </div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Physical and Mental Health</h3>
+                </div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>What is Mental Health?</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles-section">
+            <h3>Artikel Unggulan</h3>
+            <ul>
+                <li><a href="#">Mengelola Hubungan Sosial yang Sehat</a></li>
+                <li><a href="#">Bagaimana Mengelola Pikiran Negatif</a></li>
+                <li><a href="#">Tips Praktis Untuk Meningkatkan Rasa Percaya Diri</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <p>Hubungi kami: info@ruangtenang.com</p>
+            <p>© 2025 Ruang Tenang. All rights reserved.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
+

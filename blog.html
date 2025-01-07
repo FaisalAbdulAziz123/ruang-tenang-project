@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - RuangTenang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffe3d8;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #ff6f61;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .article-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 15px;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .article-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .article-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #ff6f61;
+    }
+
+    .article-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .sidebar {
+      padding: 15px;
+      background-color: #ffe3d8;
+      border-radius: 5px;
+    }
+
+    .sidebar h4 {
+      font-size: 18px;
+      color: #ff6f61;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RuangTenang</h1>
+    <nav>
+      <ul>
+        <li><a href="get_started.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="articles">
+      <div class="article-card">
+        <img src="article1.jpg" alt="Self Care">
+        <h3>Mengenal Self Care</h3>
+        <p>Artikel tentang pentingnya self care dalam keseharian.</p>
+      </div>
+      <div class="article-card">
+        <img src="article2.jpg" alt="Nutrisi">
+        <h3>Peran Nutrisi dalam Kesehatan Mental</h3>
+        <p>Bagaimana nutrisi mempengaruhi kesehatan mental kita.</p>
+      </div>
+      <div class="article-card">
+        <img src="article3.jpg" alt="Produktivitas">
+        <h3>Cara Menjaga Produktivitas</h3>
+        <p>Tips menjaga produktivitas tanpa mengorbankan kesehatan mental.</p>
+      </div>
+      <!-- Tambahkan artikel lainnya -->
+    </section>
+
+    <aside class="sidebar">
+      <h4>Artikel Unggulan</h4>
+      <ul>
+        <li><a href="#">Mengenal Emosi</a></li>
+        <li><a href="#">Tips Mengurangi Media Sosial</a></li>
+        <li><a href="#">Latihan Pernapasan</a></li>
+        <li><a href="#">Manfaat Olahraga</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Let's get in touch!</p>
+    <p>&copy; 2025 RuangTenang. All rights reserved.</p>
+    <a href="#">Contact Us</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Tenang - Quiz/Test</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFE8;
+            min-height: 100vh; /* Pastikan tinggi halaman setara dengan tinggi viewport */
+            flex-direction: column;
+
+        }
+
+        header {
+            background-color: #FFEFE8;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #FF5722;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1em;
+        }
+
+        /* Section Styles */
+        .quiz-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .quiz-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .quiz-section img {
+            width: 200px;
+            height: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .quiz-section .content {
+            max-width: 50%;
+        }
+
+        .quiz-section h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .quiz-section p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .quiz-section .cta {
+            display: inline-block;
+            background-color: #FF9F68;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+    margin-top: 85px;
+    background-color: #36405B;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #FFFFFF;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #FF5722;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>RuangTenang</h1>
+        <nav>
+            <ul>
+                <li><a href="get_started.html">Home</a></li>
+                <li><a href="quiz.html">Quiz/Test</a></li>
+                <li><a href="vidio.html">Video about Mental Health</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Quiz Sections -->
+    <section class="quiz-section">
+        <img src="assets/illustration.png" alt="Stress Illustration">
+        <div class="content">
+            <h2>Berapa tingkat stressmu?</h2>
+            <p>Ketahui tingkat stressmu dalam waktu 1 minggu ini dengan mengisi quiz.</p>
+            <a href="#" class="cta">Cek di sini!</a>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <img src="mental-health-image.png" alt="Mental Health Illustration">
+        <div class="content">
+            <h2>Berapa skor kesehatan mentalmu?</h2>
+            <p>Jika kamu belum yakin perlu bantuan profesional atau tidak. Yuk, cari tahu kondisi kesehatan mentalmu saat ini dengan menjawab 10 pertanyaan singkat di quiz ini. Kamu dapat menemukan gambaran tentang kondisimu lho!</p>
+            <a href="#" class="cta">Cek di sini!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Let’s get in touch!</p>
+        <p>📞 +012-345-6789 | <p>
+        <p>📧 hello@ruangtenang.com</p>
+        <div class="social-icons">
+        </div>
+        <p>© 2025 Ruang Tenang. All right Reserved</p>
+    </footer>
+</body>
+</html>
