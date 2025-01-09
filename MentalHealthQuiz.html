@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz/Test - RuangTenang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFE8;
+            color: #333;
+        }
+
+        header {
+            background-color: #FFEFE8;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #f78b74;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f78b74;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #FFEFE8;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: black;
+        }
+
+        .container p {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            flex: 1; /* Membuat teks soal menempati ruang yang proporsional */
+    margin: 0; /* Menghilangkan margin default */
+        }
+
+        .options {
+            margin: 10px 0;
+            
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f78b74;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e67660;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #36405B;
+            color: white;
+            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            color: #f78b74;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #f78b74;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RuangTenang</h1>
+        <nav>
+            <a href="get_started.html">Home</a>
+            <a href="quiz.html">Quiz/Test</a>
+            <a href="vidio.html">Video about Mental Health</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Berapa skor kesehatan mentalmu?</h2>
+        <p>Pilih satu jawaban yang paling sesuai dengan perasaanmu selama dua minggu belakangan ini. Jujurlah tentang keadaanmu yang sesungguhnya agar mendapatkan gambaran dan saran yang tepat.</p>
+
+        <div class="question">
+            <p>1. Apakah Anda merasa cemas atau khawatir berlebihan tentang hal-hal sehari-hari?</p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Seberapa sering Anda merasa sedih atau tidak bersemangat tanpa alasan yang jelas?</p>
+            <div class="options">
+                <label><input type="radio" name="q2"> Tidak pernah</label>
+                <label><input type="radio" name="q2"> Kadang-kadang</label>
+                <label><input type="radio" name="q2"> Lumayan</label>
+                <label><input type="radio" name="q2"> Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Seberapa sering Anda merasa lelah atau kekurangan energi, bahkan setelah beristirahat?</p>
+            <div class="options">
+                <label><input type="radio" name="q3"> Tidak pernah</label>
+                <label><input type="radio" name="q3"> Kadang-kadang</label>
+                <label><input type="radio" name="q3"> Lumayan</label>
+                <label><input type="radio" name="q3"> Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. Apakah Anda merasa memiliki pikiran negatif tentang diri sendiri atau merasa tidak berharga?</p>
+            <div class="options">
+                <label><input type="radio" name="q4"> Tidak pernah</label>
+                <label><input type="radio" name="q4"> Kadang-kadang</label>
+                <label><input type="radio" name="q4"> Lumayan</label>
+                <label><input type="radio" name="q4"> Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Apakah Anda merasa gelisah atau sulit duduk diam dalam situasi tertentu?</p>
+            <div class="options">
+                <label><input type="radio" name="q5"> Tidak pernah</label>
+                <label><input type="radio" name="q5"> Kadang-kadang</label>
+                <label><input type="radio" name="q5"> Lumayan</label>
+                <label><input type="radio" name="q5"> Sering</label>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </div>
+
+    <footer>
+        <p>Let's get in touch!</p>
+        <p>Email: support@ruangtenang.com | Phone: +62 812-3456-7890</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

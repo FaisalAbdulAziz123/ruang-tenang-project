@@ -1,163 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - RuangTenang</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff5f2;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - RuangTenang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFE8;
+            color: #333;
+        }
 
-    header {
-      background-color: #ffe3d8;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        header {
+            background-color: #FFEFE8;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    header h1 {
-      font-size: 24px;
-      color: #ff6f61;
-    }
+        header h1 {
+            font-size: 24px;
+            color: #f78b74;
+            margin: 0;
+        }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      padding: 0;
-      margin: 0;
-    }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
 
-    nav ul li {
-      margin: 0 15px;
-    }
+        nav a:hover {
+            color: #f78b74;
+        }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-    }
+        .main-content {
+            display: flex;
+            margin: 20px;
+        }
 
-    main {
-      padding: 20px;
-    }
+        .articles {
+            flex: 3;
+            margin-right: 20px;
+        }
 
-    .articles {
-      display: flex;
-      flex-wrap: wrap;
-    }
+        .articles h2 {
+            color: #f78b74;
+            font-size: 24px;
+        }
 
-    .article-card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin: 10px;
-      padding: 15px;
-      width: calc(33.333% - 20px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        .article-item {
+            display: flex;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    .article-card img {
-      width: 100%;
-      border-radius: 5px;
-    }
+        .article-item img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
 
-    .article-card h3 {
-      font-size: 18px;
-      margin: 10px 0;
-      color: #ff6f61;
-    }
+        .article-info {
+            flex: 1;
+        }
 
-    .article-card p {
-      font-size: 14px;
-      color: #666;
-    }
+        .article-info h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
 
-    .sidebar {
-      padding: 15px;
-      background-color: #ffe3d8;
-      border-radius: 5px;
-    }
+        .article-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
 
-    .sidebar h4 {
-      font-size: 18px;
-      color: #ff6f61;
-    }
+        .sidebar {
+            flex: 1;
+            background-color: #FFEFE8;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #f78b74;
+        }
 
-    .sidebar ul li {
-      margin-bottom: 10px;
-    }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
 
-    footer a {
-      color: #ff6f61;
-      text-decoration: none;
-    }
-  </style>
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .sidebar ul li a:hover {
+            color: #f78b74;
+        }
+
+        footer {
+            background-color: #36405B;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: white;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        footer .social-icons a:hover {
+            color: #f78b74;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .pagination a.active {
+            background-color: #f78b74;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>RuangTenang</h1>
-    <nav>
-      <ul>
-        <li><a href="get_started.html">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>RuangTenang</h1>
+        <nav>
+            <a href="get_started.html">Home</a>
+            <a href="quiz.html">Quiz/Test</a>
+            <a href="vidio.html">Video about Mental Health</a>
+            <a href="vidio.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
 
-  <main>
-    <section class="articles">
-      <div class="article-card">
-        <img src="article1.jpg" alt="Self Care">
-        <h3>Mengenal Self Care</h3>
-        <p>Artikel tentang pentingnya self care dalam keseharian.</p>
-      </div>
-      <div class="article-card">
-        <img src="article2.jpg" alt="Nutrisi">
-        <h3>Peran Nutrisi dalam Kesehatan Mental</h3>
-        <p>Bagaimana nutrisi mempengaruhi kesehatan mental kita.</p>
-      </div>
-      <div class="article-card">
-        <img src="article3.jpg" alt="Produktivitas">
-        <h3>Cara Menjaga Produktivitas</h3>
-        <p>Tips menjaga produktivitas tanpa mengorbankan kesehatan mental.</p>
-      </div>
-      <!-- Tambahkan artikel lainnya -->
-    </section>
+    <div class="main-content">
+        <div class="articles">
+            <h2>All Articles</h2>
 
-    <aside class="sidebar">
-      <h4>Artikel Unggulan</h4>
-      <ul>
-        <li><a href="#">Mengenal Emosi</a></li>
-        <li><a href="#">Tips Mengurangi Media Sosial</a></li>
-        <li><a href="#">Latihan Pernapasan</a></li>
-        <li><a href="#">Manfaat Olahraga</a></li>
-      </ul>
-    </aside>
-  </main>
+            <div class="article-item">
+                <img src="assets/article1.jpg" alt="Article Thumbnail">
+                <div class="article-info">
+                    <h3>Mengenal Self Care: Apa dan Mengapa Penting</h3>
+                    <p>Self-care bukan sekadar perawatan tubuh, ini adalah langkah mencintai diri sendiri untuk kesehatan mental.</p>
+                </div>
+            </div>
 
-  <footer>
-    <p>Let's get in touch!</p>
-    <p>&copy; 2025 RuangTenang. All rights reserved.</p>
-    <a href="#">Contact Us</a>
-  </footer>
+            <div class="article-item">
+                <img src="assets/article2.jpg" alt="Article Thumbnail">
+                <div class="article-info">
+                    <h3>Peran Nutrisi dalam Kesehatan Mental</h3>
+                    <p>Pola makan yang sehat mendukung kesehatan mental yang optimal.</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <img src="assets/article3.jpg" alt="Article Thumbnail">
+                <div class="article-info">
+                    <h3>Cara Menjaga Produktivitas Tanpa Mengorbankan Kesehatan Mental</h3>
+                    <p>Produktivitas penting, tetapi jangan lupakan kesehatan mental Anda.</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <img src="assets/article4.jpg" alt="Article Thumbnail">
+                <div class="article-info">
+                    <h3>Mengenal Emosi: Bagaimana Memahami dan Menerima Perasaan Kita</h3>
+                    <p>Pahami emosi Anda untuk kehidupan yang lebih harmonis.</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Artikel Unggulan</h3>
+            <ul>
+                <li><a href="#">Mengelola Hubungan Sosial yang Sehat</a></li>
+                <li><a href="#">Bagaimana Mengelola Pikiran Negatif</a></li>
+                <li><a href="#">Tips Praktis untuk Meningkatkan Rasa Percaya Diri</a></li>
+                <li><a href="#">Mengatasi Burnout di Tempat Kerja</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Let's get in touch!</p>
+        <p>Email: support@ruangtenang.com | Phone: +62 812-3456-7890</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
