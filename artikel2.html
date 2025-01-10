@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - RuangTenang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFE8;
+            color: #333;
+        }
+
+        header {
+            background-color: #FFEFE8;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #f78b74;
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f78b74;
+        }
+
+        .main-content {
+            display: flex;
+            margin: 20px;
+        }
+
+        .articles {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .articles h2 {
+            color: black;
+            font-size: 24px;
+        }
+
+        .article-item {
+            display: flex;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-item img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .article-info {
+            flex: 1;
+        }
+
+        .article-info h3 {
+            font-family: 'jost';
+            font-size: 15px;
+            color: #000000;
+            margin-top: 5px;
+        }
+
+        .article-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #555555;
+            font-family: 'jost';
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #FFEFE8;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #f78b74;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .sidebar ul li a:hover {
+            color: #f78b74;
+        }
+
+        footer {
+            background-color: #36405B;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: white;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        footer .social-icons a:hover {
+            color: #f78b74;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .pagination a.active {
+            background-color: #f78b74;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RuangTenang</h1>
+        <nav>
+            <a href="get_started.html">Home</a>
+            <a href="quiz.html">Quiz/Test</a>
+            <a href="vidio.html">Video about Mental Health</a>
+            <a href="vidio.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="articles">
+            <h2>All Articles</h2>
+
+             <div class="article-item">
+             <a href="https://www.emc.id/id/care-plus/penyebab-dan-penanganan-anxiety-disorder" target="_blank">
+              <img src="https://www.emc.id/storage/30495/responsive-images/anxiety-disorder___big_800_450.jpg" alt="">
+            </a>
+              <div class="article-info">
+        <h3>Penyebab dan Penanganan Anxiety Disorder</h3>
+        <p>Anxiety disorder merupakan gangguan mental yang menyebabkan rasa cemas dan takut berlebih. gangguan suasana perasaan seperti depresi, dan bila tidak segera diatasi maka berpotensi memburuk seiring berjalannya waktu.</p>
+     </div>
+</div>
+
+            <div class="article-item">
+                <a href="https://herminahospitals.com/id/articles/peran-tidur-dalam-kesehatan-fisik-dan-mental.html" target="_blank">
+                    <img src="https://dk4fkkwa4o9l0.cloudfront.net/production/uploads/article/image/2168/young-beautiful-woman-sleeping-bed.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Peran Tidur dalam Kesehatan Fisik dan Mental</h3>
+                    <p>Tidur merupakan kegiatan yang penting dalam menjaga kesehatan fisik dan mental seseorang. Selain sebagai waktu istirahat bagi tubuh, tidur juga memiliki peran penting dalam memperbaiki sel-sel tubuh, memperkuat sistem kekebalan tubuh, dan membantu proses pemulihan setelah aktivitas fisik maupun mental. </p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://yankes.kemkes.go.id/view_artikel/362/mengenal-pentingnya-kesehatan-mental-pada-remaja" target="_blank">
+                    <img src="assets/artikel/artikel3.png" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Mindfulness untuk Kesehatan Jiwa</h3>
+                    <p>Kata-kata tersebut sering terdengar di kalangan remaja masa kini, untuk menindas atau melemahkan lawan bicaranya. Namun hal ini sepertinya sudah menjadi tren di kalangan remaja sekarang.</p>
+                </div>
+            </div>
+          
+            <div class="article-item">
+                <a href="https://yankes.kemkes.go.id/view_artikel/3673/mindfulness-untuk-kesehatan-jiwa" target="_blank">
+                    <img src="assets/artikel/artikel4.png" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>  Ciri-ciri Burnout dan Cara Mengatasinya</h3>
+                    <p>Mindfulness adalah aktivitas menyadari sepenuhnya apa yang terjadi di dalam diri kita dengan tujuan (niat) menyatukan pikiran, perasaan, dan tubuh kita untuk fokus pada apa yang sedang dilakukan. Tentu saja hal ini membuat kesadaran penuh dan memberikan pandangan positif.</p>
+                </div>
+            </div>
+            
+            <div class="article-item">
+                <a href="https://www.alodokter.com/ciri-ciri-burnout-dan-cara-mengatasinya" target="_blank">
+                    <img src="https://yankes.kemkes.go.id/img/bg-img/gambarartikel_1727401918_693150.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Cara mengatasi stres dan mencapai jiwa yang sehat</h3>
+                    <p>Jagalah kesehatan dengan olahraga atau aktivitas fisik secara teratur, tidur cukup, makan makanan bergizi seimbang, serta terapkan perilaku bersih dan sehat</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://rsjrw.id/artikel/mengenal-burnout-bukan-sekedar-lelah" target="_blank">
+                    <img src="https://rsjrw.id/assets/images/news/artikel-mengenal-burnout-bukan-sekedar-lelah-1704870463.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3> Mengenal Burnout, Bukan Sekedar Lelah</h3>
+                    <p>Pernahkah kita merasa lelah yang tak ada ujungnya? Semua hal terasa berat, tidak ada energi untuk beraktivitas. Tekanan yang ada bisa karena lingkungan, pekerjaan atau pertemanan. Apabila kita merasakan stres berlebihan yang tak kunjung hilang, maka perlu waspada bisa jadi sedang mengalami burnout.</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://satupersen.net/blog/capek-mental-vs-capek-fisik-mana-yang-lebih-bahaya" target="_blank">
+                    <img src="https://hantu.satupersen.net/content/images/size/w1000/2024/11/21-7.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3> Capek Mental vs Capek Fisik, Mana yang Lebih Bahaya</h3>
+                    <p>Kelelahan mental dan fisik memiliki dampak berbeda pada tubuh dan pikiran
+                        Capek mental bisa lebih berbahaya karena sulit terdeteksi dan sering diabaikan
+                        Ada cara praktis untuk mengelola kedua jenis kelelahan ini
+                        Pentingnya mengenali tanda-tanda kelelahan sejak dini</p>
+                </div>
+            </div>
+
+
+          
+            <div class="article-item">
+                <a href="https://rskddadi.sulselprov.go.id/detail-berita/hubungan-antara-nutrisi-dan-kesehatan-mental-pentingnya-gizi-di-rumah-sakit-jiwa" target="_blank">
+                    <img src="https://rskddadi.sulselprov.go.id/storage/assets/images/berita/hubungan-antara-nutrisi-dan-kesehatan-mental-pentingnya-gizi-di-rumah-sakit-jiwa-17.webp" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Hubungan antara Nutrisi dan Kesehatan Mental </h3>
+                    <p>Kesehatan mental adalah aspek penting dalam kehidupan manusia, namun sering kali diabaikan hubungannya dengan nutrisi. Padahal, berbagai penelitian menunjukkan bahwa pola makan yang sehat dapat membantu meningkatkan kondisi mental pasien.</p>
+                </div>
+            </div>
+
+
+         
+            <div class="article-item">
+                <a href="https://www.rri.co.id/hiburan/805725/mengelola-emosi-untuk-kesehatan-mental-yang-lebih-baik" target="_blank">
+                    <img src="https://cdn.rri.co.id/berita/Manado/o/1720185276372-marah/zdenp4a87abd1f7.jpeg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>  Mengelola Emosi untuk Kesehatan Mental yang Lebih Baik</h3>
+                    <p> Setiap orang mengalami berbagai jenis emosi dalam kehidupan sehari-hari. Namun, mengendalikan emosi adalah keterampilan penting yang dapat memengaruhi kesehatan mental seseorang secara signifikan.</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://satupersen.net/blog/susah-fokus-kerja-di-rumah-coba-7-tips-work-from-home-ini" target="_blank">
+                    <img src="https://hantu.satupersen.net/content/images/size/w1000/2024/11/45-9.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3> Susah Fokus Kerja di Rumah? Coba 7 Tips Work From Home Ini </h3>
+                    <p>Eh, siapa nih yang masih suka kentang pas kerja dari rumah?</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="artikel1.html">Next &raquo;</a>
+                <a href="artikel1.html">1</a>
+                <a href="artikel2.html" class="active">2</a>
+                <a href="artikel3.html">3</a>
+                <a href="artikel3.html">Next &raquo;</a>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Artikel Unggulan</h3>
+            <ul>
+                <li><a href="#">Mengelola Hubungan Sosial yang Sehat</a></li>
+                <li><a href="#">Bagaimana Mengelola Pikiran Negatif</a></li>
+                <li><a href="#">Tips Praktis untuk Meningkatkan Rasa Percaya Diri</a></li>
+                <li><a href="#">Mengatasi Burnout di Tempat Kerja</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Let's get in touch!</p>
+        <p>Email: support@ruangtenang.com | Phone: +62 812-3456-7890</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

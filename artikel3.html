@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - RuangTenang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEFE8;
+            color: #333;
+        }
+
+        header {
+            background-color: #FFEFE8;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #f78b74;
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f78b74;
+        }
+
+        .main-content {
+            display: flex;
+            margin: 20px;
+        }
+
+        .articles {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .articles h2 {
+            color: black;
+            font-size: 24px;
+        }
+
+        .article-item {
+            display: flex;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-item img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .article-info {
+            flex: 1;
+        }
+
+        .article-info h3 {
+            font-family: 'jost';
+            font-size: 15px;
+            color: #000000;
+            margin-top: 5px;
+        }
+
+        .article-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #555555;
+            font-family: 'jost';
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #FFEFE8;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #f78b74;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .sidebar ul li a:hover {
+            color: #f78b74;
+        }
+
+        footer {
+            background-color: #36405B;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: white;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        footer .social-icons a:hover {
+            color: #f78b74;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .pagination a.active {
+            background-color: #f78b74;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RuangTenang</h1>
+        <nav>
+            <a href="get_started.html">Home</a>
+            <a href="quiz.html">Quiz/Test</a>
+            <a href="vidio.html">Video about Mental Health</a>
+            <a href="vidio.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="articles">
+            <h2>All Articles</h2>
+
+             <div class="article-item">
+             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9472646/" target="_blank">
+              <img src="https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-cureus.png" alt="">
+            </a>
+              <div class="article-info">
+        <h3>Role of Art Therapy in the Promotion of Mental Health: A Critical Review</h3>
+        <p>Art therapy is used most commonly to treat mental illnesses and can aid in controlling manifestations correlated with psychosocially challenging behaviours, slowing cognitive decline, and enhancing the quality of life. Art therapy can help people express themselves more freely, improve their mental health, and improve interpersonal relationships.</p>
+     </div>
+</div>
+
+            <div class="article-item">
+                <a href="https://yankes.kemkes.go.id/view_artikel/3712/peran-olahraga-dalam-meningkatkan-kesehatan-mental" target="_blank">
+                    <img src="https://yankes.kemkes.go.id/img/bg-img/gambarartikel_1728443495_121851.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3> Peran Olahraga dalam Meningkatkan Kesehatan Mental</h3>
+                    <p>Ada orang yang mampu mengatasi permasalahannya dengan baik, ada pula yang terkadang mengalami kesulitan dalam menyelesaikan permasalahan yang dihadapi. Stres ini muncul dalam berbagai tingkatan dan bentuk, dipengaruhi oleh banyak faktor seperti pengalaman masa lalu, kepribadian, dan kondisi lingkungan hidup. </p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-sleep-better" target="_blank">
+                    <img src="https://www.mentalhealth.org.uk/sites/default/files/styles/750_x_450_mhf_theme/public/2023-03/How%20to%20sleep%20better_cover-2023_2.jpg?h=b9513a7c&itok=mLiJ01o0" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>How to Sleep Better</h3>
+                    <p>This guide offers tips on how to sleep better - looking at improving the quality of your sleep, what causes sleep disorders and possible solutions, top tips from a sleep doctor, and a sleep diary template to help you keep track of your sleep and the possible reasons it happened.</p>
+                </div>
+            </div>
+          
+            <div class="article-item">
+                <a href="https://www.dfunstation.com/blog/read/kesehatan-mental/299/peran-keluarga-dalam-mendukung-kesehatan-mental" target="_blank">
+                    <img src="https://www.dfunstation.com/gambar/blog/blog-peran-keluarga-dalam-mendukung-kesehatan-mental-299-l.png" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3> Peran Keluarga dalam Mendukung Kesehatan Mental </h3>
+                    <p>Kesehatan mental merupakan aspek penting dari kesejahteraan yang sering kali terabaikan. Dalam hal ini, keluarga merupakan sekolah pertama dalam tumbuh kembang yang berpengaruh besar dalam menyiapkan dan menentukan perkembangan kepribadian pada setiap individu. </p>
+                </div>
+            </div>
+            
+            <div class="article-item">
+                <a href="https://satupersen.net/blog/gratitude-vs-stres-kebiasaan-toxic-yang-bikin-stres-makin-parah-di-2025" target="_blank">
+                    <img src="https://hantu.satupersen.net/content/images/size/w1000/2025/01/1-45.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Gratitude vs Stres: Kebiasaan Toxic yang Bikin Stres Makin Parah di 2025</h3>
+                    <p>Sebagai generasi muda yang aktif dan penuh ambisi, kita sering banget mendewakan stres sebagai tanda produktivitas. Bahkan, ada yang bangga bilang "Gue produktif karena stres!" Padahal, ini adalah mindset yang bisa bikin lo terjebak dalam lingkaran setan yang nggak sehat.</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://rsjrw.id/artikel/kesehatan-mental-dan-hubungan-sosial-bagaimana-menjaga-keseimbangan" target="_blank">
+                    <img src="assets/artikel/artikel6.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Kesehatan Mental dan Hubungan Sosial: Bagaimana Menjaga Keseimbangan</h3>
+                    <p>Apakah akhir-akhir ini Kamu merasa kesulitan untuk berkonsentrasi mendengarkan penjelasan dosen atau arahan atasan di kantor? Apakah Kamu merasa tidak memiliki energi untuk menyelesaikan tugas atau pekerjaan? Apakah Kamu kesulitan untuk memulai mengerjakan tugas dan pekerjaan yang menumpuk?</p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://www.alodokter.com/yuk-terapkan-mindfulness-dalam-keseharianmu" target="_blank">
+                    <img src="https://rsjrw.id/assets/images/news/artikel-kesehatan-mental-dan-hubungan-sosial-bagaimana-menjaga-keseimbangan-1725937207.png" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Yuk, Terapkan Mindfulness dalam Keseharianmu</h3>
+                    <p>Kesehatan mental adalah aspek penting dari kesejahteraan manusia, yang mencakup kondisi emosional, psikologis, dan sosial seseorang. Keseimbangan antara kesehatan mental dan hubungan sosial sangat penting karena keduanya saling mempengaruhi.</p>
+                </div>
+            </div>
+
+
+          
+            <div class="article-item">
+                <a href="https://www.alodokter.com/ptsd" target="_blank">
+                    <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1621416459/attached_image/ptsd-0-alodokter.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Posttraumatic Stress Disorder (PTSD)</h3>
+                    <p>PTSD bisa muncul setelah mengalami atau menyaksikan peristiwa yang menakutkan atau mengancam nyawa. Belum diketahui secara pasti mengapa peristiwa tersebut menyebabkan PTSD pada beberapa orang</p>
+                </div>
+            </div>
+
+
+         
+            <div class="article-item">
+                <a href="https://tirto.id/gangguan-kejiwaan-bukan-kejahatan-stigmatisasi-harus-dihentikan-ejE7#google_vignette" target="_blank">
+                    <img src="https://mmc.tirto.id/image/otf/970x0/2019/07/04/ilustrasi-paranoia-istock--2_ratio-16x9.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>Gangguan Kejiwaan Bukan Kejahatan, Stigmatisasi Harus Dihentikan </h3>
+                    <p>Hari Kesehatan Jiwa tanggal 10 Oktober kemarin mestinya dirayakan dengan perubahan positif penanganan kesahatan dan peningkatan kualitas hidup Orang dengan Gangguan Jiwa (ODGJ). </p>
+                </div>
+            </div>
+
+            <div class="article-item">
+                <a href="https://www.get-kalm.com/blog/read/54917" target="_blank">
+                    <img src="https://storage.googleapis.com/get-kalm-images/img/uploads/article/2024/11/25/1732502278-5_Bahaya_Fixed_Mindset_yang_Bisa_Membuatmu_Menyesal.jpg" alt="">
+                  </a>
+                <div class="article-info">
+                    <h3>5 Bahaya Fixed Mindset yang Bisa Membuatmu Menyesal</h3>
+                    <p>Pernahkah kamu merasa bahwa kemampuanmu sudah terbatas, atau bahwa kesuksesan hanya untuk orang lain? Jika ya, kamu mungkin terjebak dalam fixed mindset.</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="artikel2.html">Next &raquo;</a>
+                <a href="artikel1.html">1</a>
+                <a href="artikel2.html">2</a>
+                <a href="artikel3.html" class="active">3</a>
+                <a href="artikel3.html">Next &raquo;</a>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Artikel Unggulan</h3>
+            <ul>
+                <li><a href="#">Mengelola Hubungan Sosial yang Sehat</a></li>
+                <li><a href="#">Bagaimana Mengelola Pikiran Negatif</a></li>
+                <li><a href="#">Tips Praktis untuk Meningkatkan Rasa Percaya Diri</a></li>
+                <li><a href="#">Mengatasi Burnout di Tempat Kerja</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Let's get in touch!</p>
+        <p>Email: support@ruangtenang.com | Phone: +62 812-3456-7890</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
