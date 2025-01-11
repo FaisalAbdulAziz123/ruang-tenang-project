@@ -40,12 +40,9 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            max-width: 800px; /* Atur lebar maksimum */
+    margin: 0 auto; /* Tengah-kan konten */
+    padding: 20px;
         }
 
         .container h2 {
@@ -60,14 +57,17 @@
         }
 
         .question {
-            margin-bottom: 20px;
-            margin-right: 200px;
+            background-color: #fff; /* Warna putih untuk kotak */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+    padding: 20px; /* Ruang di dalam */
+    margin-bottom: 20px; /* Jarak antar pertanyaan */
         }
 
         .question p {
-            flex: 1;
-            margin: 0;
-            margin-right: 230px;
+            font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
         }
 
         .options {
@@ -75,25 +75,25 @@
         }
 
         .options label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 14px;
+            display: block; /* Opsi di baris baru */
+            margin-bottom: 10px;
         }
 
         button {
             display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #f78b74;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
+    width: 100px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fbc8b0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
         }
 
         button:hover {
-            background-color: #e67660;
+            background-color: #f9a68e;
         }
 
         footer {
@@ -131,7 +131,9 @@
 </head>
 <body>
     <header>
-        <h1>RuangTenang</h1>
+        <a href="get_started.html">
+            <img src="assets/LogoRuangTenang.png" alt="Logo RuangTenang" style="height: 80px; margin-left: 30px;">
+        </a>
         <nav>
             <a href="get_started.html">Home</a>
             <a href="quiz.html">Quiz/Test</a>
@@ -146,52 +148,125 @@
         <p>Pilih satu jawaban yang paling sesuai dengan perasaanmu selama dua minggu belakangan ini. Jujurlah tentang keadaanmu yang sesungguhnya agar mendapatkan gambaran dan saran yang tepat.</p>
 
         <div class="question">
-            <p>1. Apakah Anda merasa cemas atau khawatir berlebihan tentang hal-hal sehari-hari?</p>
+            <p>1.Selama sebulan terakhir, seberapa sering anda marah karena sesuatu yang tidak
+                terduga.</p>
             <div class="options">
                 <label><input type="radio" name="q1"> Tidak pernah</label>
                 <label><input type="radio" name="q1"> Kadang-kadang</label>
                 <label><input type="radio" name="q1"> Lumayan</label>
                 <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
             </div>
         </div>
 
         <div class="question">
-            <p>2. Seberapa sering Anda merasa sedih atau tidak bersemangat tanpa alasan yang jelas?</p>
+            <p>2.Selama sebulan terakhir, seberapa sering anda merasa tidakmampu mengontrol halhal yang penting dalam kehidupan anda.
+            </p>
             <div class="options">
-                <label><input type="radio" name="q2"> Tidak pernah</label>
-                <label><input type="radio" name="q2"> Kadang-kadang</label>
-                <label><input type="radio" name="q2"> Lumayan</label>
-                <label><input type="radio" name="q2"> Sering</label>
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>3.Selama sebulan terakhir, seberapa sering anda merasa gelisah dan tertekan.</p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
             </div>
         </div>
 
         <div class="question">
-            <p>3. Seberapa sering Anda merasa lelah atau kekurangan energi, bahkan setelah beristirahat?</p>
+            <p>4.Selama sebulan terakhir, seberapa sering anda merasa yakin terhadap kemampuan
+                diri untuk mengatasi masalah pribadi. (pertanyaan positif)
+                </p>
             <div class="options">
-                <label><input type="radio" name="q3"> Tidak pernah</label>
-                <label><input type="radio" name="q3"> Kadang-kadang</label>
-                <label><input type="radio" name="q3"> Lumayan</label>
-                <label><input type="radio" name="q3"> Sering</label>
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
             </div>
         </div>
 
         <div class="question">
-            <p>4. Apakah Anda merasa memiliki pikiran negatif tentang diri sendiri atau merasa tidak berharga?</p>
+            <p>5.Selama sebulan terakhir, seberapa sering anda merasa segala sesuatu yang terjadi
+                sesuai dengan harapan anda. (pertanyaan positif)</p>
             <div class="options">
-                <label><input type="radio" name="q4"> Tidak pernah</label>
-                <label><input type="radio" name="q4"> Kadang-kadang</label>
-                <label><input type="radio" name="q4"> Lumayan</label>
-                <label><input type="radio" name="q4"> Sering</label>
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
             </div>
         </div>
 
         <div class="question">
-            <p>5. Apakah Anda merasa gelisah atau sulit duduk diam dalam situasi tertentu?</p>
+            <p>6.Selama sebulan terakhir, seberapa sering anda merasa tidak mampu menyelesaikan
+                hal-hal yang harus dikerjakan.</p>
             <div class="options">
-                <label><input type="radio" name="q5"> Tidak pernah</label>
-                <label><input type="radio" name="q5"> Kadang-kadang</label>
-                <label><input type="radio" name="q5"> Lumayan</label>
-                <label><input type="radio" name="q5"> Sering</label>
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7.Selama sebulan terakhir, seberapa sering anda mampu mengontrol rasa mudah
+                tersinggung dalam kehidupan anda (pertanyaan positif)
+                </p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8.Selama sebulan terakhir, seberapa sering anda merasa lebih mampu mengatasi
+                masalah jika dibandingkan dengan orang lain (pertanyaan positif)
+                </p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9.Selama sebulan terakhir, seberapa sering anda marah karena adanya masalah yang
+                tidak dapat anda kendalikan.</p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10.Selama sebulan terakhir, seberapa sering anda merasakan kesulitan yang menumpuk
+                sehingga anda tidak mampu untuk mengatasinya.
+                </p>
+            <div class="options">
+                <label><input type="radio" name="q1"> Tidak pernah</label>
+                <label><input type="radio" name="q1"> Kadang-kadang</label>
+                <label><input type="radio" name="q1"> Lumayan</label>
+                <label><input type="radio" name="q1"> Sering</label>
+                <label><input type="radio" name="q1"> Sangat Sering</label>
             </div>
         </div>
 
