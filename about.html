@@ -12,18 +12,27 @@
       background-color: #fff5f2;
       color: #333;
     }
-
     header {
-      background-color: #fff5f2;
+        background-color: #FFEFE8;
       padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+    .logo-text {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 80px;
+      margin-right: 15px;
+    }
 
     header h1 {
-      font-size: 24px;
-      color: #ff6f61;
+        font-size: 24px;
+      margin: 0;
+      color: #f78b74;
     }
 
     nav ul {
@@ -116,9 +125,10 @@
 </head>
 <body>
   <header>
-    <a href="get_started.html">
-      <img src="assets/LogoRuangTenang.png" alt="Logo RuangTenang" style="height: 90px; margin-left: 15px;">
-  </a>
+    <div class="logo-text">
+      <img src="assets/LogoRuangTenang.png" alt="Logo Ruang Tenang" class="logo">
+      <h1>Ruang Tenang</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
