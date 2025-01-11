@@ -69,12 +69,15 @@
             border-radius: 10px;
             width: 830px;
             height: 100px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
         }
 
         .video-item img {
-            width: 100px;
+            width: 120px;
             height: 100px;
             border-radius: 10px;
+            transition: transform 0.3s ease; /* Animasi smooth pada gambar */
+
         }
 
         .video-item .video-info {
@@ -94,6 +97,14 @@
             font-family: 'jost';
             /* letter-spacing: 3px; */
 
+        }
+        .video-item:hover {
+        transform: scale(1.05); /* Perbesar elemen */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+        background-color: #fff7f5; /* Sedikit ubah warna background */
+        }
+        .video-item:hover img {
+        transform: scale(1.1); /* Perbesar gambar */
         }
 
         .articles-section {
@@ -271,12 +282,12 @@
             </div>
 
             <div class="video-item">
-                <a href="https://youtu.be/HkWFo5973Z4?si=d81lMkf20HJrio8Z" target="_blank">
-                <img src="assets/vidio4.jpg" alt="Video Thumbnail">
+                <a href="https://youtu.be/trSHTvxKwGg?si=z1cKWrhhaPi3lBhO" target="_blank">
+                <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1674005249/attached_image/skizofrenia-0-alodokter.jpg" alt="Video Thumbnail">
                 <div class="video-info">
                     <h3>
                         <a>
-                            Mental Illness atau Mental Disorder – 13 Macam Penyakit Gangguan Mental
+                            Apa itu Skizofrenia
                           </a>  
                         </a>
                     </h3>
@@ -284,12 +295,13 @@
             </div>
 
             <div class="video-item">
-                <a href="https://youtu.be/HkWFo5973Z4?si=d81lMkf20HJrio8Z" target="_blank">
-                <img src="assets/vidio4.jpg" alt="Video Thumbnail">
+                <a href="https://youtu.be/A3uIr2F2Ono?si=UZRa8FKp8at0R816" target="_blank">
+                <img src="assets/vidio6.png" alt="Video Thumbnail">
                 <div class="video-info">
                     <h3>
                         <a>
-                            Mental Illness atau Mental Disorder – 13 Macam Penyakit Gangguan Mental
+                            Kenali Berbagai Gangguan Kecemasan dan Cara Mengatasinya
+
                           </a>  
                         </a>
                     </h3>
@@ -297,12 +309,12 @@
             </div>
 
             <div class="video-item">
-                <a href="https://youtu.be/HkWFo5973Z4?si=d81lMkf20HJrio8Z" target="_blank">
-                <img src="assets/vidio4.jpg" alt="Video Thumbnail">
+                <a href="https://youtu.be/S7sv5U38c_0?si=Kn7ZzCY5eXJbXrCd" target="_blank">
+                <img src="assets/vidio7.png" alt="Video Thumbnail">
                 <div class="video-info">
                     <h3>
                         <a>
-                            Mental Illness atau Mental Disorder – 13 Macam Penyakit Gangguan Mental
+                            Mental Illness
                           </a>  
                         </a>
                     </h3>
@@ -321,7 +333,7 @@
 
         
 
-        <div class="articles-section">
+        <!-- <div class="articles-section">
             <h3>Artikel Unggulan</h3>
             <ul>
                 <li><a href="#">Mengelola Hubungan Sosial yang Sehat</a>
@@ -339,7 +351,7 @@
                 <li><a href="#">Tips Praktis Untuk Meningkatkan Rasa Percaya Diri</a>
                 <p>Okt 18, 2020</p></li></li>
             </ul>
-        </div>
+        </div> -->
     </div>
 
     <footer>
